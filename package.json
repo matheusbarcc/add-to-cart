@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s04hv56",
-  "description": "https://v2.scrimba.com/build-a-mobile-app-with-firebase-c0g/~010",
+  "name": "add-to-cart",
+  "description": "Simple shopping list app",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,7 +8,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001621",
     "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

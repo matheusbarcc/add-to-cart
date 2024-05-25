@@ -46,20 +46,20 @@ function clearInputFieldEl() {
 }
 
 function appendItemToShoppingListEl(item) {
-    let itemID = item[0]
-    let itemValue = item[1]
+    let itemID = item[0];
+    let itemValue = item[1];
     
-    let newEl = document.createElement('li')
-    newEl.tabIndex = 1
+    let newEl = document.createElement('li');
+    newEl.tabIndex = 1;
+     newEl.className = 'font-xl bg-item-color p-4 rounded-lg text-center shadow grow';
     
-    
-    newEl.textContent = itemValue
+    newEl.textContent = itemValue;
     
     newEl.addEventListener("click", function() {
-        let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
+        let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`);
         
-        remove(exactLocationOfItemInDB)
-    })
+        remove(exactLocationOfItemInDB);
+    });
     
-    shoppingListEl.append(newEl)
+    document.getElementById('shopping-list').append(newEl);
 }

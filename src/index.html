@@ -9,17 +9,16 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="index.css">
+        <link href="./output.css" rel="stylesheet">
     </head>
-    <body>
-        <div class="container">
-            <img src="/add-to-cart/assets/cat.png" alt="cat img">
-            <input type="text" id="input-field" placeholder="Bread">
-            <button id="add-button">Add to cart</button>
-            <ul id="shopping-list">
+    <body class="font-body text-lg bg-background-color flex justify-center">
+        <div class="flex flex-col items-center gap-y-2 my-8">
+            <img class="size-36" src="/assets/cat.png" alt="cat img">
+            <input class="text-xl w-60 rounded-lg bg-input-bg-color text-center py-4" type="text" id="input-field" placeholder="Bread">
+            <button class="text-xl w-60 rounded-lg text-white bg-button-color text-center py-4" id="add-button">Add to cart</button>
+            <ul class="flex flex-wrap justify-center gap-2.5 w-60" id="shopping-list">
             </ul>
         </div>
         <script src="index.js" type="module"></script>
-    </body>
+    </body>    
 </html>
